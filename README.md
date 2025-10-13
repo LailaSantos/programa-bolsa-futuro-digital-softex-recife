@@ -1,8 +1,7 @@
 # 🏀 Projeto – NBA
 
-Este projeto foi desenvolvido para o curso **Bolsa Futuro Digital** da **Softex Pernambuco**, com o objetivo de praticar os conteúdos aprendidos nos primeiros módulos do curso, utilizando **HTML**, **CSS** e um pouco de **JavaScript**, além de aplicar conceitos de **responsividade** nas telas.
+Este projeto foi desenvolvido para o curso **Bolsa Futuro Digital** da **Softex Pernambuco**, com o objetivo de praticar os conteúdos aprendidos nos primeiros módulos do curso, utilizando **HTML**, **CSS** e **JavaScript**, além de aplicar conceitos de **responsividade** nas telas.
 
----
 
 ## 🎨 Desafio Escolhido
 

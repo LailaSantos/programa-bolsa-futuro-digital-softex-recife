@@ -1,12 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>NBA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+<header>
+  <div class="logo">
+    <img class="logo-nba" src="./assets/logo.jpg" alt="NBA" />
+  </div>
+  <nav>
+    <a href="#inicio">Home</a>
+    <a href="#resumo">Sobre</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#times">Times</a>
+  </nav>    
+</header>
+
+<section id="inicio" class="section">
+  <h1>Jogo em andamento</h1>
+  <div class="hero-game">
+    <div class="team">
+      <img src="./assets/BostonCeltics.png" alt="Celtics">
+      <p>Boston Celtics</p>
+    </div>
+    <div class="score">
+      <h2>103 - 100</h2>
+      <p>4º Quarto • 02:15 restantes</p>
+      <div class="div-watch-btn">
+        <button class="watch-btn" onclick="assistir()">Assistir ao vivo</button>
+      </div>
+    </div>
+    <div class="team">
+      <img src="./assets/GoldenStateWarriors.png" alt="Warriors">
+      <p>Golden State Warriors</p>
+    </div>
+  </div>
+</section>
+
+<section id="resumo" class="section">
+  <p>
+    A NBA (National Basketball Association) é a principal liga de basquete dos Estados Unidos. 
+    Ela é dividida em duas conferências: Leste e Oeste, cada uma com 3 divisões e vários times.
+    Durante a temporada regular, os times se enfrentam em busca de vitórias. 
+  </p>
+  <h3>Estrutura dos Jogos</h3>
+  <ul>
+    <li>Cada jogo tem 4 quartos de 12 minutos cada.</li>
+    <li>O relógio para em algumas situações, então o tempo real da partida costuma durar mais de 2 horas.</li>
+    <li>Se houver empate no final do tempo regulamentar, o jogo vai para a prorrogação (overtime), com períodos extras de 5 minutos até que haja um vencedor.</li>
+  </ul>
+
+  <p><strong>Siglas usadas</strong></p>
+  <ul class="siglas-list">
+    <li>PPG → Pontos por jogo</li>
+    <li>RPG → Rebotes por jogo</li>
+    <li>APG → Assistências por jogo</li>
+  </ul>
+
+  <p><strong>Posição dos jogadores</strong></p>
+  <ul class="siglas-list">
+    <li>PG → Armador (Point Guard)</li>
+    <li>SG → Ala-armador (Shooting Guard)</li>
+    <li>SF → Ala (Small Forward)</li>
+    <li>PF → Ala-pivô (Power Forward)</li>
+    <li>C → Pivô (Center)</li>
+  </ul>
+</section>
+
+<section id="jogos" class="section">
+  <h1>Jogos de Hoje</h1>
+  <div class="games-list">
+    <div class="game-card">
+      <h4>JOGO 1</h4>
+      <p>GSW 2-1</p>
+      <h2>1:00 PM</h2>
+      <div class="teams-row">
+        <div class="team-logo">
+          <img src="./assets/SacramentoKings.png" alt="Kings" />
+          <p>Kings</p>
+        </div>
+        <span class="versus">x</span>
+        <div class="team-logo">
+          <img src="./assets/GoldenStateWarriors.png" alt="Warriors" />
+          <p>Warriors</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <h4>JOGO 2</h4>
+      <p>BOS 2-1</p>
+      <h2>4:00 PM</h2>
+      <div class="teams-row">
+        <div class="team-logo">
+          <img src="./assets/BostonCeltics.png" alt="Celtics" />
+          <p>Celtics</p>
+        </div>
+        <span class="versus">x</span>
+        <div class="team-logo">
+          <img src="./assets/NewYorkKnicks.png" alt="Knicks" />
+          <p>Knicks</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <h4>JOGO 3</h4>
+      <p>LAL 1-2</p>
+      <h2>6:30 PM</h2>
+      <div class="teams-row">
+        <div class="team-logo">
+          <img src="./assets/LosAngelesLakers.png" alt="Lakers" />
+          <p>Lakers</p>
+        </div>
+        <span class="versus">x</span>
+        <div class="team-logo">
+          <img src="./assets/MiamiHeat.png" alt="Heat" />
+          <p>Heat</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="melhores-jogadores" class="section">
+  <h1>Melhores Jogadores</h1>
+  <div class="players-list">
+    <a href="infoJogador.html?jogador=tatum" class="player-card">
+      <img src="./assets/JaysonTatum.png" alt="Jayson Tatum">
+      <h4>Jayson Tatum</h4>
+    </a>
+
+    <a href="infoJogador.html?jogador=curry" class="player-card">
+      <img src="./assets/StephenCurry.png" alt="Stephen Curry">
+      <h4>Stephen Curry</h4>
+    </a>
+
+    <a href="infoJogador.html?jogador=lebron" class="player-card">
+      <img src="./assets/LebronJames.jpg" alt="LeBron James">
+      <h4>LeBron James</h4>
+    </a>
+
+    <a href="infoJogador.html?jogador=jokic" class="player-card">
+      <img src="./assets/NikolaJokic.jpeg" alt="Nikola Jokić">
+      <h4>Nikola Jokić</h4>
+    </a>
+
+    <a href="infoJogador.html?jogador=giannis" class="player-card">
+      <img src="./assets/GiannisAntetokounmpo.png" alt="Giannis Antetokounmpo">
+      <h4>Giannis Antetokounmpo</h4>
+    </a>
+
+    <a href="infoJogador.html?jogador=davis" class="player-card">
+      <img src="./assets/AnthonyDavis.png" alt="Anthony Davis">
+      <h4>Anthony Davis</h4>
+    </a>
+  </div>
+</section>
+
+<section id="times" class="section">
+  <h2>Times</h2>
+  <div>
+    <h2>Conferência Leste</h2>
+    <div class="conference">
+    <h3>Atlântico</h3>
+    <div class="teams-grid">
+      <div class="team-card">
+        <img src="./assets/BostonCeltics.png" alt="Boston Celtics">
+        <p>Boston Celtics</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/BrooklynNets.png" alt="Brooklyn Nets">
+        <p>Brooklyn Nets</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/NewYorkKnicks.png" alt="New York Knicks">
+        <p>New York Knicks</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/Philadelphia76.png" alt="Philadelphia 76ers">
+        <p>Philadelphia 76ers</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/TorontoRaptors.png" alt="Toronto Raptors">
+        <p>Toronto Raptors</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conference">
+    <h3>Central</h3>
+    <div class="teams-grid">
+      <div class="team-card">
+        <img src="./assets/ChicagoBulls.png" alt="Chicago Bulls">
+        <p>Chicago Bulls</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/ClevelandCavaliers.png" alt="Cleveland Cavaliers">
+        <p>Cleveland Cavaliers</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/DetroitTigers.png" alt="Detroit Pistons">
+        <p>Detroit Pistons</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/IndianaPacers.png" alt="Indiana Pacers">
+        <p>Indiana Pacers</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets//MilwaukeeBucks.png" alt="Milwaukee Bucks">
+        <p>Milwaukee Bucks</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conference">
+    <h3>Sudeste</h3>
+    <div class="teams-grid">
+      <div class="team-card">
+        <img src="./assets/AtlantaHawks.png" alt="Atlanta Hawks">
+        <p>Atlanta Hawks</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets//CharlotteHornets.png" alt="Charlotte Hornets">
+        <p>Charlotte Hornets</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/MiamiHeat.png" alt="Miami Heat">
+        <p>Miami Heat</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/OrlandoMagic.png" alt="Orlando Magic">
+        <p>Orlando Magic</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/WashingtonWizards.png" alt="Washington Wizards">
+        <p>Washington Wizards</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+ <div>
+  <h2>Conferência Oeste</h2>
+   <div class="conference">
+    <h3>Noroeste</h3>
+    <div class="teams-grid">
+      <div class="team-card">
+        <img src="./assets/DenverNuggets.png" alt="Denver Nuggets">
+        <p>Denver Nuggets</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/MinnesotaTimberwolves.png" alt="Minnesota Timberwolves">
+        <p>Minnesota Timberwolves</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/OklahomaCityThunder.png" alt="Oklahoma City Thunder">
+        <p>Oklahoma City Thunder</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/PortlandTrailBlazers.png" alt="Portland Trail Blazers">
+        <p>Portland Trail Blazers</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/UtahJazz.png" alt="Utah Jazz">
+        <p>Utah Jazz</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conference">
+    <h3>Pacífico</h3>
+    <div class="teams-grid">
+      <div class="team-card">
+        <img src="./assets/GoldenStateWarriors.png" alt="Golden State Warriors">
+        <p>Golden State Warriors</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/LosAngelesClippers.png" alt="Los Angeles Clippers">
+        <p>Los Angeles Clippers</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/LosAngelesLakers.png" alt="Los Angeles Lakers">
+        <p>Los Angeles Lakers</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/PhoenixSuns.png" alt="Phoenix Suns">
+        <p>Phoenix Suns</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/SacramentoKings.png" alt="Sacramento Kings">
+        <p>Sacramento Kings</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conference">
+    <h3>Sudoeste</h3>
+    <div class="teams-grid">
+      <div class="team-card">
+        <img src="./assets/DallasMavericks.png" alt="Dallas Mavericks">
+        <p>Dallas Mavericks</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/HoustonRockets.png" alt="Houston Rockets">
+        <p>Houston Rockets</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/MemphisGrizzlies.png" alt="Memphis Grizzlies">
+        <p>Memphis Grizzlies</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/NewOrleansPelicans.png" alt="New Orleans Pelicans">
+        <p>New Orleans Pelicans</p>
+      </div>
+      <div class="team-card">
+        <img src="./assets/SanAntonioSpurs.png" alt="San Antonio Spurs">
+        <p>San Antonio Spurs</p>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+  &copy; 2025 NBA. Todos os direitos reservados.
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
